@@ -1,0 +1,283 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja</title>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- NAV BAR -->
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap py-5 px-20 flex-col md:flex-row items-center">
+            <nav class="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+                <a href="tshirts.html" class="mr-5 hover:text-gray-900">T-Shirts</a>
+                <a href="tshirts.html" class="mr-5 hover:text-gray-900">Acessórios</a>
+            </nav>
+            <a href="index.html"
+                class="flex order-first lg:order-none lg:w-1/5 title-font font-medium items-center text-gray-900 lg:items-center lg:justify-center mb-4 md:mb-0">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2"
+                    class="w-10 h-10 text-white p-2 bg-blue-500 hover:bg-blue-700 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg>
+                <span href="tshirts.html" class="ml-3 text-xl">Elecres</span>
+            </a>
+            <div class="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0 mr-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-flex items-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </button>
+                <!-- Button trigger modal -->
+                <button
+                    class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0"
+                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 inline-flex items-center" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                    </svg>
+                </button>
+                <!-- Modal -->
+                <div class="modal fade fixed top-0 left-0 hidden w-full h-full outline-none overflow-x-hidden overflow-y-auto"
+                    id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog relative pointer-events-none">
+                        <div
+                            class="modal-content border-none shadow-lg relative flex flex-col pointer-events-auto bg-white bg-clip-padding rounded-md outline-none text-current">
+                            <div class="w-full h-full flex items-stretch justify-center">
+                                <div
+                                    class="bg-gray-200 w-full h-auto rounded-lg pt-8 pb-8 px-8 flex flex-col items-center">
+                                    <label class="font-light text-4xl mb-4"><span
+                                            class="font-bold">Elecres</span></label>
+                                    <input type="text"
+                                        class="w-full h-12 rounded-lg px-4 text-lg focus:ring-blue-600 mb-4"
+                                        placeholder="Email" />
+                                    <input type="password"
+                                        class="w-full h-12 rounded-lg px-4 text-lg focus:ring-blue-600 mb-4"
+                                        placeholder="Password" />
+                                    <a href="Conta.html"
+                                        class="w-full h-12 bg-blue-600 text-gray-200 uppercase font-semibold hover:bg-blue-700  transition mb-4 rounded-full">
+                                        <button
+                                            class="w-full h-12 bg-blue-600 text-gray-200 uppercase font-semibold hover:bg-blue-700  transition mb-4 rounded-full">
+                                            Entrar
+                                        </button>
+                                    </a>
+                                    <p class="text-right mb-4">Criar Conta</p>
+                                    <p class="text-right mb-4">Esqueci a Password</p>
+
+                                    <button
+                                        class="w-full h-12 rounded-full bg-red-600 text-gray-200 uppercase font-semibold hover:bg-red-700  transition mb-4">Entrar
+                                        com o Google</button>
+                                    <button
+                                        class="w-full h-12 rounded-full bg-blue-500 text-gray-200 uppercase font-semibold hover:bg-blue-700  transition mb-4">Entrar
+                                        com o Facebook</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- FIM MODAL -->
+            </div>
+        </div>
+    </header>
+    <!-- FIM NAV BAR -->
+
+    <!-- INICIO HERO -->
+    <section class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap flex-row items-center py-5 px-20 mt-10 mb-32">
+
+            <!-- INICIO BOTAO -->
+
+            <div class="container mx-auto flex flex-wrap md:flex-row items-start pb-10">
+                <a href="tshirts.html"
+                    class="relative inline-flex items-center justify-start py-3 pl-4 pr-12 overflow-hidden font-normal text-gray-500 transition-all duration-150 ease-in-out rounded hover:pl-10 hover:pr-6 bg-gray-50 group">
+                    <span
+                        class="absolute bottom-0 left-0 w-full h-1 transition-all duration-150 ease-in-out bg-blue-500 group-hover:h-full"></span>
+                    <span class="absolute right-0 pr-4 duration-200 ease-out group-hover:translate-x-12">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-gray-500" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                    </span>
+                    <span
+                        class="absolute left-0 pl-2.5 -translate-x-12 group-hover:translate-x-0 ease-out duration-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                        </svg>
+                    </span>
+                    <span
+                        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">Regressar</span>
+                </a>
+            </div>
+
+            <!-- FIM BOTAO -->
+
+            <div class="lg:w-1/2 w-full lg:h-auto h-64 rounded-lg overflow-hidden sm:mt-0">
+                <img href="" class="object-cover object-center w-full max-h-196" src="Assets/img/produto1.jpg"
+                    alt="T-Shirts">
+                </img>
+            </div>
+            <div class="flex flex-wrap mt-auto mb-auto content-start lg:w-1/2 sm:w-2/3 lg:pl-20 lg:py-auto">
+                <div class="w-full">
+                    <h2 class="text-sm title-font text-gray-500 tracking-widest">T-SHIRT</h2>
+                    <h1 class="text-gray-900 text-3xl title-font font-medium mb-5">T-Shirt Branca Simples</h1>
+                    <p class="leading-relaxed">Trabalhámos de perto com os nossos fornecedores para assegurar que o
+                        nosso material é fornecido de forma responsável, utilizando métodos de produção sustentáveis.
+                        Esta t-shirt tem um toque luxusoso e encaixa perfeitamente no teu estilo.</p>
+                    <div class="flex mt-6 items-center pb-5 border-b-2 border-gray-100 mb-5">
+                        <div class="flex">
+                            <span class="mr-3">Cor</span>
+                            <button class="border-2 border-gray-300 rounded-full w-6 h-6 focus:outline-none"></button>
+                            <button
+                                class="border-2 border-gray-300 ml-1 bg-gray-700 rounded-full w-6 h-6 focus:outline-none"></button>
+                            <button
+                                class="border-2 border-gray-300 ml-1 bg-indigo-500 rounded-full w-6 h-6 focus:outline-none"></button>
+                        </div>
+                        <div class="flex ml-6 items-center">
+                            <span class="mr-3">Tamanho</span>
+                            <div class="relative">
+                                <select
+                                    class="rounded border appearance-none border-gray-300 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-200 focus:border-indigo-500 text-base pl-3 pr-10">
+                                    <option>S</option>
+                                    <option>M</option>
+                                    <option>L</option>
+                                    <option>XL</option>
+                                </select>
+                                <span
+                                    class="absolute right-0 top-0 h-full w-10 text-center text-gray-600 pointer-events-none flex items-center justify-center">
+                                    <svg fill="none" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="2" class="w-4 h-4" viewBox="0 0 24 24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <span class="title-font font-medium text-2xl text-gray-900">
+                            €58.00
+                        </span>
+                        <button
+                            class="flex ml-auto text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">
+                            Comprar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- FIM HERO -->
+
+    <!-- INICIO FOOTER -->
+    <footer class="text-gray-600 body-font">
+        <div
+            class="container py-24 px-20 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
+            <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10">
+                <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="2"
+                        class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span class="ml-3 text-xl">Elecres</span>
+                </a>
+                <p class="mt-2 text-sm text-gray-500">More Quality. More Sustainability.</p>
+            </div>
+            <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first">
+                <div class="lg:w-1/4 md:w-1/2 w-full pr-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">INFORMAÇÕES</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Acerca da Elecres</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Sustentabilidade</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Imprensa</a>
+                        </li>
+                    </nav>
+                </div>
+                <div class="lg:w-1/4 md:w-1/2 w-full pr-4">
+                    <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">AJUDA</h2>
+                    <nav class="list-none mb-10">
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Atendimento ao Cliente</a>
+                        </li>
+                        <li>
+                            <a href="Conta.html" class="text-gray-600 hover:text-gray-800">A minha conta</a>
+                        </li>
+                        <li>
+                            <a href="privacidade.html" class="text-gray-600 hover:text-gray-800">Avisos legais e
+                                privacidade</a>
+                        </li>
+                        <li>
+                            <a href="Contactos.html" class="text-gray-600 hover:text-gray-800">Contactos</a>
+                        </li>
+                        <li>
+                            <a class="text-gray-600 hover:text-gray-800">Definições de cookies</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-gray-100">
+            <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                <p class="text-gray-500 text-sm text-center sm:text-left">© Elecres</p>
+                <span class="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
+                    <a class="text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            class="w-5 h-5" viewBox="0 0 24 24">
+                            <path
+                                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                            </path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                        </svg>
+                    </a>
+                    <a class="ml-3 text-gray-500">
+                        <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                            stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                            <path stroke="none"
+                                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z">
+                            </path>
+                            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+                        </svg>
+                    </a>
+                </span>
+            </div>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
+
+
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+
+</html>
