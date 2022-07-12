@@ -9,7 +9,7 @@ document.getElementById("botaoEmail").onclick = function () {
     let regName = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1]*$/g;
     let regContact = /^\d{9}$/;
 
-    if (name.match(regName) && name.length >= 1 && email.match(regMail) && contact.match(regContact) && message.length <= 400) {
+    if (name.match(regName) && name.length >= 1 && email.match(regMail) && contact.match(regContact) && message.length <= 400 && message.length > 0) {
         alert(`
         O teu nome é ${name}. 
         O teu email é ${email}. 
@@ -26,6 +26,9 @@ document.getElementById("botaoEmail").onclick = function () {
     } else if (!contact.match(regContact)) {
         alert ("Contacto Inválido");
         document.getElementById("contact").focus();
+    } else if (message.length == 0) {
+        alert ("Escreva a sua mensagem.");
+        document.getElementById("message").focus();
     } else if (!message.length <= 400) {
         alert ("A mensagem não pode ultrapssar os 400 caracteres.");
         document.getElementById("message").focus();
