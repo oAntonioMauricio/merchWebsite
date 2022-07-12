@@ -1,4 +1,5 @@
 // Validação formulário dos contactos
+
 document.getElementById("botaoEmail").onclick = function () {
     let name = document.getElementById("name").value;
     let email = document.getElementById("email").value;
@@ -34,3 +35,5 @@ document.getElementById("botaoEmail").onclick = function () {
         document.getElementById("message").focus();
     }
 }
+
+// ---
