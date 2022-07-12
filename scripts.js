@@ -5,11 +5,11 @@ document.getElementById("botaoEmail").onclick = function () {
     let contact = document.getElementById("contact").value;
     let message = document.getElementById("message").value;
 
-    let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    let regMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
     let regName = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1]*$/g;
     let regContact = /^\d{9}$/;
 
-    if (name.match(regName) && email.match(mailformat) && contact.match(regContact) && message.length <= 400) {
+    if (name.match(regName) && name.length >= 1 && email.match(regMail) && contact.match(regContact) && message.length <= 400) {
         alert(`
         O teu nome é ${name}. 
         O teu email é ${email}. 
@@ -17,10 +17,10 @@ document.getElementById("botaoEmail").onclick = function () {
         A tua mensagem é ${message}.
         
         A tua mensagem foi enviada 😁`);
-    } else if (!name.match(regName)) {
+    } else if (!name.match(regName) || name.length < 1) {
         alert ("Nome Inválido");
         document.getElementById("name").focus();
-    } else if (!email.match(mailformat)) {
+    } else if (!email.match(regMail)) {
         alert ("Email Inválido");
         document.getElementById("email").focus();
     } else if (!contact.match(regContact)) {
