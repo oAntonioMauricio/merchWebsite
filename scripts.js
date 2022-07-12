@@ -10,7 +10,11 @@ document.getElementById("botaoEmail").onclick = function () {
     let regContact = /^\d{9}$/;
 
     if (name.match(regName) && email.match(mailformat) && contact.match(regContact) && message.length <= 400) {
-        alert(`O teu nome é ${name}. O teu email é ${email}. O teu telemóvel é ${contact}. A tua mensagem é ${message}.
+        alert(`
+        O teu nome é ${name}. 
+        O teu email é ${email}. 
+        O teu telemóvel é ${contact}. 
+        A tua mensagem é ${message}.
         
         A tua mensagem foi enviada 😁`);
     } else if (!name.match(regName)) {
